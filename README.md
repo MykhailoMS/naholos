@@ -20,7 +20,7 @@ cannot change the letters of the text.
 ## Install
 
 ```bash
-pip install git+https://github.com/MykhailoMS/naholos
+pip install naholos
 ```
 
 The model ([Mikhailo/naholos-tagger](https://huggingface.co/Mikhailo/naholos-tagger), ~830 MB)

@@ -14,8 +14,16 @@ authors = [{ name = "Mykhailo Mulesa" }]
 keywords = ["ukrainian", "stress", "accent", "наголос", "tts", "nlp"]
 classifiers = [
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
   "Natural Language :: Ukrainian",
   "Topic :: Text Processing :: Linguistic",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
 ]
 dependencies = [
   "torch>=2.1",
@@ -34,6 +42,11 @@ naholos = "naholos.cli:main"
 
 [project.urls]
 Repository = "https://github.com/MykhailoMS/naholos"
+Issues = "https://github.com/MykhailoMS/naholos/issues"
+Model = "https://huggingface.co/Mikhailo/naholos-tagger"
+
+[tool.hatch.build.targets.sdist]
+include = ["src/naholos", "tests", "examples", "scripts", "README.md", "LICENSE", "pyproject.toml"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/naholos"]
