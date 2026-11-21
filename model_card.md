@@ -24,7 +24,7 @@ combines this model with the
 [ukrainian-word-stress](https://github.com/lang-uk/ukrainian-word-stress) dictionary:
 
 ```bash
-pip install git+https://github.com/MykhailoMS/naholos
+pip install naholos
 ```
 
 ```python
